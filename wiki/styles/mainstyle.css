@@ -1,0 +1,47 @@
+:root{
+	--color1:white;
+	--color2:#06acc9;
+	--color3:#F7F7F8;
+
+	--headerheight:60px;
+	--menuwidth:300px;
+}
+
+body{
+	font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+	margin: 0px;
+	font-size: 24px;
+	background-color: purple;
+}
+
+.header{
+	background-color: var(--color2);
+	height: var(--headerheight);
+	width: 100%;
+}
+.semi-content{
+	width: 100%;
+	height: calc(100vh - var(--headerheight));
+}
+.semi-content div{
+	float: left;
+}
+.menu{
+	background-color: var(--color3);
+	height: 100%;
+	width: var(--menuwidth);
+}
+.content{
+	background-color: var(--color1);
+	width: calc(100% - var(--menuwidth));
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.tabContent{
+	height: 100%;
+	margin: 60px 40px 40px 40px;
+}
+.tabContent a{
+	text-decoration:none;
+}
